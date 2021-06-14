@@ -4,9 +4,9 @@
   
     
     <entry>
-      <title>前言</title>
-      <link href="2020/11/01/%E5%89%8D%E8%A8%80/"/>
-      <url>2020/11/01/%E5%89%8D%E8%A8%80/</url>
+      <title>初学python爬虫</title>
+      <link href="2020/11/01/%E5%88%9D%E5%AD%A6python%E7%88%AC%E8%99%AB/"/>
+      <url>2020/11/01/%E5%88%9D%E5%AD%A6python%E7%88%AC%E8%99%AB/</url>
       
         <content type="html"><![CDATA[<pre><code>小白一枚，多多指教</code></pre>]]></content>
       
@@ -14,7 +14,26 @@
       
         <tags>
             
-            <tag> -导航 </tag>
+            <tag> -python爬虫 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>leetcode（1）-两数之和</title>
+      <link href="2020/11/01/%E5%89%8D%E8%A8%80/"/>
+      <url>2020/11/01/%E5%89%8D%E8%A8%80/</url>
+      
+        <content type="html"><![CDATA[<pre><code>1. 两数之和</code></pre><p>给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 的那 两个 整数，并返回它们的数组下标。<br>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。<br>你可以按任意顺序返回答案。</p><pre><code>  class Solution &#123;public int[] twoSum(int[] nums, int target) &#123;    HashMap&lt;Integer,Integer&gt; map = new HashMap&lt;&gt;();    for(int i = 0; i &lt; nums.length; i++)&#123;        int con=target-nums[i];        if(map.containsKey(con))&#123;            return new int[]&#123;map.get(con), i&#125;;        &#125;        map.put(nums[i], i);    &#125;    return null;&#125;&#125;</code></pre><p>java HashMap用法：<a href="https://www.runoob.com/java/java-hashmap.html">https://www.runoob.com/java/java-hashmap.html</a><br>Java HashMap containsKey() 方法：<a href="https://www.runoob.com/java/java-hashmap-containskey.html">https://www.runoob.com/java/java-hashmap-containskey.html</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> -leedcode -python </tag>
             
         </tags>
       
